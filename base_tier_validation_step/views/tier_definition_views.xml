@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <odoo>
+
+    <!-- View tier.definition form -->
+    <record id="view_tier_definition_form" model="ir.ui.view">
+        <field name="name">view.tier.definition.form</field>
+        <field name="model">tier.definition</field>
+        <field name="inherit_id" ref="base_tier_validation.tier_definition_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//label[@for='approve_sequence_bypass']" position="before">
+                <field name="need_validated_by_field" />
+            </xpath>
+        </field>
+    </record>
+
+  </odoo>

@@ -1,0 +1,26 @@
+<odoo>
+    <template
+        id="tier_validation_label_step_back"
+        inherit_id="base_tier_validation.tier_validation_label"
+    >
+        <xpath expr="//button[@name='reject_tier']" position="after">
+            <button
+                name="step_tier_validation"
+                string="Step Back"
+                type="object"
+                class="oe_inline oe_button btn-warning btn-sm mx-1"
+                icon="fa-arrow-circle-left"
+            />
+            <field name="validated_field" invisible="1" />
+        </xpath>
+        <button name="validate_tier" position="attributes">
+            <attribute name="attrs">{'invisible': ['|', ('can_review', '=', False),('validated_field', '=', False)]}</attribute>
+
+        </button>
+    </template>
+    <template id="base_tier_validation_step.tier_validation_reviews_inherit" inherit_id="base_tier_validation.tier_validation_reviews">
+        <xpath expr="//field[@name='review_ids']/tree/field[@name='comment']" position="before">
+            <field name="need_validate_field" />
+        </xpath>
+    </template>
+</odoo>
