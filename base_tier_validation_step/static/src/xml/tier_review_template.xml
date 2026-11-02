@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <t
+        t-name="base_tier_validation_step.Collapse"
+        t-inherit="base_tier_validation.Collapse"
+        t-inherit-mode="extension"
+        owl="1"
+    >
+        <xpath expr="//th[@name='th_comment']" position="before">
+            <th name="th_field_confirmed" class="text-right">Field Confirmed</th>
+        </xpath>
+        <xpath expr="//td[@name='td_comment']" position="before">
+            <td name="td_field_confirmed" class="text-right">
+                <t t-if="review.field_confirmed">
+                    <i class="fa fa-check" />
+                    <span t-esc="review.field_confirmed_by[1]" />
+                </t>
+                <t t-elif="review.need_validate_field">
+                    <i class="fa fa-hourglass-half" />
+                </t>
+            </td>
+        </xpath>
+    </t>
+</templates>

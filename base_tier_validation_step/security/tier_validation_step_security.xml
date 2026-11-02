@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="group_tier_step_back_manager" model="res.groups">
+        <field name="name">Tier Validation: Step Back Any Document</field>
+        <field name="category_id" ref="base.module_category_hidden" />
+        <field
+            name="comment"
+        >Can step back any document under validation, without being one of its reviewers.</field>
+    </record>
+    <record id="base.group_system" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('group_tier_step_back_manager'))]" />
+    </record>
+</odoo>

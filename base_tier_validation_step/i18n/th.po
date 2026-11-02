@@ -1,0 +1,260 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_tier_validation_step
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20250909\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-02 05:17+0000\n"
+"PO-Revision-Date: 2026-11-02 05:17+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: base_tier_validation_step
+#. odoo-python
+#: code:addons/base_tier_validation_step/models/tier_validation.py:0
+#, python-format
+msgid "%(user)s confirmed the tier: %(tiers)s"
+msgstr "%(user)s ยืนยันขั้นอนุมัติ: %(tiers)s"
+
+#. module: base_tier_validation_step
+#. odoo-python
+#: code:addons/base_tier_validation_step/models/tier_validation.py:0
+#, python-format
+msgid "%(user)s stepped the validation back to %(tier)s. Reason: %(reason)s"
+msgstr "%(user)s ย้อนการอนุมัติกลับไปที่ %(tier)s เหตุผล: %(reason)s"
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_validation_step_wizard__available_review_ids
+msgid "Available Reviews"
+msgstr "ขั้นอนุมัติที่เลือกได้"
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_validation__can_step_back
+msgid "Can Step Back"
+msgstr "ย้อนขั้นได้"
+
+#. module: base_tier_validation_step
+#: model:res.groups,comment:base_tier_validation_step.group_tier_step_back_manager
+msgid ""
+"Can step back any document under validation, without being one of its "
+"reviewers."
+msgstr ""
+"ย้อนขั้นการอนุมัติของเอกสารใดก็ได้ โดยไม่ต้องเป็นผู้อนุมัติของเอกสารนั้น"
+
+#. module: base_tier_validation_step
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_step.view_stepback_wizard_form
+msgid "Cancel"
+msgstr "ยกเลิก"
+
+#. module: base_tier_validation_step
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_step.tier_validation_label_step_back
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_step.view_stepback_wizard_form
+msgid "Confirm"
+msgstr "ยืนยัน"
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_validation_step_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_validation_step_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_validation_step_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_validation_step_wizard__res_id
+msgid "Document ID"
+msgstr "รหัสเอกสาร"
+
+#. module: base_tier_validation_step
+#. odoo-javascript
+#: code:addons/base_tier_validation_step/static/src/xml/tier_review_template.xml:0
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_review__field_confirmed
+#, python-format
+msgid "Field Confirmed"
+msgstr "ยืนยันแล้ว"
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_review__field_confirmed_by
+msgid "Field Confirmed By"
+msgstr "ยืนยันโดย"
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_review__field_confirmed_date
+msgid "Field Confirmed On"
+msgstr "ยืนยันเมื่อ"
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_validation_step_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_validation_step_wizard____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_validation_step_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_validation_step_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_validation_step_wizard__res_model
+msgid "Model"
+msgstr "โมเดล"
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_review__need_validate_field
+msgid "Need Validate Field"
+msgstr "ต้องยืนยันก่อนอนุมัติ"
+
+#. module: base_tier_validation_step
+#. odoo-python
+#: code:addons/base_tier_validation_step/models/tier_validation.py:0
+#, python-format
+msgid ""
+"Please confirm the following tiers before validating:\n"
+"- %s"
+msgstr ""
+"กรุณายืนยันขั้นต่อไปนี้ก่อนอนุมัติ:\n"
+"- %s"
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_validation_step_wizard__reason
+msgid "Reason"
+msgstr "เหตุผล"
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_validation__validated_field
+msgid "Review Validated"
+msgstr "พร้อมอนุมัติ"
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_validation_step_wizard__reset_review_ids
+msgid "Reviews to Reopen"
+msgstr "ขั้นที่จะเปิดให้อนุมัติใหม่"
+
+#. module: base_tier_validation_step
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_step.tier_validation_label_step_back
+msgid "Step Back"
+msgstr "ย้อนขั้น"
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_validation_step_wizard__selected_review_id
+msgid "Step Back To"
+msgstr "ย้อนกลับไปที่"
+
+#. module: base_tier_validation_step
+#. odoo-python
+#: code:addons/base_tier_validation_step/models/tier_validation.py:0
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_step.view_stepback_wizard_form
+#, python-format
+msgid "Step Back Validation"
+msgstr "ย้อนขั้นการอนุมัติ"
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,help:base_tier_validation_step.field_tier_validation__validated_by_field
+msgid "The current user must confirm before validating."
+msgstr "ผู้ใช้ปัจจุบันต้องยืนยันก่อนอนุมัติ"
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,help:base_tier_validation_step.field_tier_definition__need_validated_by_field
+#: model:ir.model.fields,help:base_tier_validation_step.field_tier_review__need_validate_field
+msgid ""
+"The reviewer of this tier must press Confirm before the Validate button "
+"becomes available."
+msgstr "ผู้อนุมัติของขั้นนี้ต้องกดยืนยันก่อน ปุ่มอนุมัติจึงจะแสดง"
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,help:base_tier_validation_step.field_tier_validation__validated_field
+msgid ""
+"There is a pending review and nothing left to confirm for the current user."
+msgstr "มีขั้นที่รออนุมัติและผู้ใช้ปัจจุบันไม่มีรายการที่ต้องยืนยันแล้ว"
+
+#. module: base_tier_validation_step
+#. odoo-python
+#: code:addons/base_tier_validation_step/models/tier_validation.py:0
+#, python-format
+msgid "There is nothing for you to confirm on this document."
+msgstr "เอกสารนี้ไม่มีรายการที่คุณต้องยืนยัน"
+
+#. module: base_tier_validation_step
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_step.view_stepback_wizard_form
+msgid "These tiers will be reviewed again"
+msgstr "ขั้นเหล่านี้จะต้องอนุมัติใหม่"
+
+#. module: base_tier_validation_step
+#. odoo-python
+#: code:addons/base_tier_validation_step/models/tier_validation.py:0
+#, python-format
+msgid "This document has no review to step back to."
+msgstr "เอกสารนี้ไม่มีขั้นที่ย้อนกลับไปได้"
+
+#. module: base_tier_validation_step
+#: model:ir.model,name:base_tier_validation_step.model_tier_definition
+msgid "Tier Definition"
+msgstr ""
+
+#. module: base_tier_validation_step
+#: model:ir.model,name:base_tier_validation_step.model_tier_review
+msgid "Tier Review"
+msgstr ""
+
+#. module: base_tier_validation_step
+#: model:ir.model,name:base_tier_validation_step.model_tier_validation
+msgid "Tier Validation (abstract)"
+msgstr ""
+
+#. module: base_tier_validation_step
+#: model:ir.model,name:base_tier_validation_step.model_tier_validation_step_wizard
+msgid "Tier Validation Step Back Wizard"
+msgstr "ตัวช่วยย้อนขั้นการอนุมัติ"
+
+#. module: base_tier_validation_step
+#: model:res.groups,name:base_tier_validation_step.group_tier_step_back_manager
+msgid "Tier Validation: Step Back Any Document"
+msgstr "การอนุมัติหลายขั้น: ย้อนขั้นเอกสารใดก็ได้"
+
+#. module: base_tier_validation_step
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_definition__need_validated_by_field
+#: model:ir.model.fields,field_description:base_tier_validation_step.field_tier_validation__validated_by_field
+msgid "Validated by Field"
+msgstr "ต้องยืนยันก่อนอนุมัติ"
+
+#. module: base_tier_validation_step
+#: model_terms:ir.ui.view,arch_db:base_tier_validation_step.view_stepback_wizard_form
+msgid "Why is this document going back?"
+msgstr "เหตุใดจึงต้องส่งเอกสารนี้กลับ?"
+
+#. module: base_tier_validation_step
+#. odoo-python
+#: code:addons/base_tier_validation_step/models/tier_validation.py:0
+#, python-format
+msgid "You are not allowed to step back this document."
+msgstr "คุณไม่มีสิทธิ์ย้อนขั้นเอกสารนี้"
+
+#. module: base_tier_validation_step
+#. odoo-python
+#: code:addons/base_tier_validation_step/models/tier_validation.py:0
+#, python-format
+msgid "You can only step back to a tier already reviewed."
+msgstr "ย้อนกลับได้เฉพาะขั้นที่ตรวจแล้วเท่านั้น"

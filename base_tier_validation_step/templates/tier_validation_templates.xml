@@ -1,26 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <template
         id="tier_validation_label_step_back"
         inherit_id="base_tier_validation.tier_validation_label"
     >
+        <xpath expr="//field[@name='need_validation']" position="before">
+            <field name="validated_by_field" invisible="1" />
+            <field name="validated_field" invisible="1" />
+            <field name="can_step_back" invisible="1" />
+        </xpath>
+        <xpath expr="//button[@name='validate_tier']" position="attributes">
+            <attribute
+                name="attrs"
+            >{'invisible': ['|', ('can_review', '=', False), ('validated_field', '=', False)]}</attribute>
+        </xpath>
+        <xpath expr="//button[@name='validate_tier']" position="before">
+            <button
+                name="confirm_by_field"
+                string="Confirm"
+                attrs="{'invisible': [('validated_by_field', '=', False)]}"
+                type="object"
+                class="btn-sm btn-primary mx-1"
+                icon="fa-check"
+            />
+        </xpath>
         <xpath expr="//button[@name='reject_tier']" position="after">
             <button
                 name="step_tier_validation"
                 string="Step Back"
+                attrs="{'invisible': [('can_step_back', '=', False)]}"
                 type="object"
-                class="oe_inline oe_button btn-warning btn-sm mx-1"
+                class="btn-sm btn-warning mx-1"
                 icon="fa-arrow-circle-left"
             />
-            <field name="validated_field" invisible="1" />
         </xpath>
-        <button name="validate_tier" position="attributes">
-            <attribute name="attrs">{'invisible': ['|', ('can_review', '=', False),('validated_field', '=', False)]}</attribute>
-
-        </button>
+        <xpath expr="//div[hasclass('alert-success')]/p" position="inside">
+            <button
+                name="step_tier_validation"
+                string="Step Back"
+                attrs="{'invisible': [('can_step_back', '=', False)]}"
+                type="object"
+                class="btn-sm btn-warning mx-1"
+                icon="fa-arrow-circle-left"
+            />
+        </xpath>
+        <xpath expr="//div[hasclass('alert-danger')]/p" position="inside">
+            <button
+                name="step_tier_validation"
+                string="Step Back"
+                attrs="{'invisible': [('can_step_back', '=', False)]}"
+                type="object"
+                class="btn-sm btn-warning mx-1"
+                icon="fa-arrow-circle-left"
+            />
+        </xpath>
     </template>
-    <template id="base_tier_validation_step.tier_validation_reviews_inherit" inherit_id="base_tier_validation.tier_validation_reviews">
-        <xpath expr="//field[@name='review_ids']/tree/field[@name='comment']" position="before">
+    <template
+        id="tier_validation_reviews_inherit"
+        inherit_id="base_tier_validation.tier_validation_reviews"
+    >
+        <xpath expr="//tree/field[@name='comment']" position="before">
             <field name="need_validate_field" />
+            <field name="field_confirmed" />
+            <field name="field_confirmed_by" />
         </xpath>
     </template>
 </odoo>
